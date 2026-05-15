@@ -1,0 +1,47 @@
+// $bgColor: #24292e;
+// $text: #fff;
+
+// @font-face {
+//   font-family: 'Comic';
+//   src: url('../fonts/comic.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// body {
+//   padding: 1rem;
+//   margin: 0;
+//   font-family: Comic, sans-serif;
+//   background-color: $bgColor;
+//   color: $text;
+// }
+
+// @import '/node_modules/normalize.css/normalize.css';
+@import '~normalize.css/normalize.css';
+@import '~swiper/swiper-bundle.css';
+
+@import './base/variables';
+@import './base/fonts';
+@import './base/global';
+
+@import './blocks/header/header';
+
+@import './blocks/main/main';
+@import './blocks/main/main-header';
+@import './blocks/main/main-about';
+
+@import './blocks/main/section-container/section-container';
+@import './blocks/main/section-container/services';
+@import './blocks/main/section-container/swiper-container';
+@import './blocks/main/section-container/service-item';
+@import './blocks/main/section-container/about-prices';
+
+@import './blocks/main/services-price-table/services-price-table';
+@import './blocks/main/services-price-table/service-item-prices';
+
+@import './blocks/footer/footer';
+
+@import './overlay/container';
+@import './overlay/menu-mobile';
+@import './overlay/modal';
+@import './overlay/body-overlay';

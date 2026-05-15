@@ -1,0 +1,99 @@
+.service-item-prices {
+  @media (min-width: 320px) {
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    min-height: 200px;
+
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    background: $white-color;
+    border-radius: 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      min-height: 64px;
+      gap: 0px;
+      padding: 16px 0;
+      align-items: center;
+      border-bottom: 1px solid $light-gray-color;
+    }
+  }
+
+  &__wrapper {
+    flex-direction: column;
+
+    &--768 {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__price-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+      white-space: nowrap;
+      gap: 0;
+    }
+  }
+
+  &__parameter {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 114%;
+    font-weight: 500;
+    color: $gray-color;
+    opacity: 0.72;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 16px 4px 12px;
+    width: 119px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: -0.15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $raspberry-color;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      background-color: $raspberry-color-hover;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 10px;
+      background-image: url(/src/img/services/service-item-prices__btn.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+    }
+  }
+}

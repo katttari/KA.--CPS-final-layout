@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
+    <title>Верстка финального макета</title>
+  </head>
+
+  <body>
+    <div id="body-overlay" class="body-overlay"> </div>
+    <div class="container flex">
+      <header class="header">
+        <div class="header__container header-container">
+          <div class="header-container__menu-info menu-info">
+            <button
+              type="button"
+              id="burger-menu-btn"
+              class="menu-info__burger-menu-btn burger-menu-btn btn-reset"
+            >
+              <img
+                src="img/header/header-burger.svg"
+                alt="Меню"
+                class="burger-menu-btn__img"
+              />
+            </button>
+            <div class="menu-info__divider header-divider header-divider--768">
+            </div>
+            <a href="#" class="menu-info__logo-link">
+              <img
+                src="img/header/header-logo.svg"
+                alt="Логотип компании"
+                class="menu-info__logo-icon"
+              />
+            </a>
+            <div class="menu-info__divider header-divider header-divider--320">
+            </div>
+          </div>
+
+          <div class="header-container__menu-list-wrapper flex">
+            <ul
+              class="header-container__menu-list feedback feedback-header--768 list-reset flex"
+            >
+              <li class="feedback__item flex">
+                <button
+                  type="button"
+                  id="header-call-btn-open-modal"
+                  class="feedback__btn btn-reset"
+                >
+                  <img
+                    src="/src/img/menu-mobile/menu-mobile-icon-phone.svg"
+                    alt="Заказать звонок"
+                    class="feedback__icon"
+                  />
+                </button>
+              </li>
+              <li class="feedback__item flex">
+                <button
+                  type="button"
+                  id="header-feedback-btn-open-modal"
+                  class="feedback__btn btn-reset"
+                >
+                  <img
+                    src="/src/img/menu-mobile/menu-mobile-icon-chat.svg"
+                    alt="Обратная связь"
+                    class="feedback__icon"
+                  />
+                </button>
+              </li>
+              <li class="feedback__item flex">
+                <button type="button" class="feedback__btn btn-reset">
+                  <img
+                    src="/src/img/menu-mobile/menu-mobile-icon-profile.svg"
+                    alt="Профиль"
+                    class="feedback__icon"
+                  />
+                </button>
+              </li>
+            </ul>
+            <div
+              class="header-container__divider header-divider header-divider--768"
+            >
+            </div>
+
+            <ul class="header-container__menu-list menu-list list-reset">
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  <img
+                    src="img/header/header-repair.svg"
+                    alt="Оставить заявку"
+                    class="menu-list__icon"
+                  />
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  <img
+                    src="img/header/header-checkstatus.svg"
+                    alt="Статус ремонта"
+                    class="menu-list__icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div id="burger-menu" class="container__menu-mobile menu-mobile flex">
+        <header class="menu-mobile__header menu-mobile-header flex">
+          <button
+            type="button"
+            id="burger-menu-btn-close"
+            class="menu-mobile-header__button menu-mobile-header__button--close btn-reset"
+          >
+          </button>
+          <a href="#" class="menu-mobile-header__logo-link">
+            <img
+              src="/src/img/menu-mobile/menu-mobile-logo.svg"
+              alt="Логотип компании"
+              class="menu-mobile-header__logo-icon"
+            />
+          </a>
+          <button
+            type="button"
+            class="menu-mobile-header__button menu-mobile-header__button--search btn-reset"
+          >
+          </button>
+        </header>
+
+        <nav class="menu-mobile__navigation">
+          <ul class="menu-mobile__list flex list-reset">
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"> Ремонт техники </a>
+            </li>
+            <li class="menu-mobile__item menu-mobile__item--active">
+              <a href="#" class="menu-mobile__link"> Услуги и сервисы </a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"> Корпоративным клиентам </a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"> Продавцам техники </a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"> Партнерам </a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"> Производителям </a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"> Наши сервисные центры </a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+
+        <footer class="menu-mobile__footer menu-mobile-footer">
+          <div
+            class="menu-mobile-footer__contacts menu-mobile-footer-contacts flex"
+          >
+            <ul
+              class="menu-mobile-footer-contacts__feedback feedback flex list-reset"
+            >
+              <li class="feedback__item flex">
+                <button
+                  type="button"
+                  id="call-btn-open-modal"
+                  class="feedback__btn btn-reset"
+                >
+                  <img
+                    src="/src/img/menu-mobile/menu-mobile-icon-phone.svg"
+                    alt="Заказать звонок"
+                    class="feedback__icon"
+                  />
+                </button>
+              </li>
+              <li class="feedback__item flex">
+                <button
+                  type="button"
+                  id="feedback-btn-open-modal"
+                  class="feedback__btn btn-reset"
+                >
+                  <img
+                    src="/src/img/menu-mobile/menu-mobile-icon-chat.svg"
+                    alt="Обратная связь"
+                    class="feedback__icon"
+                  />
+                </button>
+              </li>
+              <li class="feedback__item flex">
+                <button type="button" class="feedback__btn btn-reset">
+                  <img
+                    src="/src/img/menu-mobile/menu-mobile-icon-profile.svg"
+                    alt="Профиль"
+                    class="feedback__icon"
+                  />
+                </button>
+              </li>
+            </ul>
+
+            <a
+              href="mailto:mail@cps.com"
+              class="menu-mobile-footer-contacts__mail"
+            >
+              mail@cps.com
+            </a>
+            <a
+              href="tel:+78008908900"
+              class="menu-mobile-footer-contacts__phone"
+            >
+              8 800 890 8900
+            </a>
+          </div>
+
+          <ul
+            lang="en"
+            class="menu-mobile-footer__languages-list languages-list flex list-reset"
+          >
+            <li class="languages-list__item">
+              <a href="#" class="languages-list__link"> RU </a>
+            </li>
+            <li class="languages-list__item">
+              <a href="#" class="languages-list__link"> EN </a>
+            </li>
+            <li class="languages-list__item">
+              <a href="#" class="languages-list__link"> CH </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+
+      <div
+        id="modal-feedback-window"
+        class="container__modal modal modal--feedback flex"
+      >
+        <header class="modal-feedback__header modal__header">
+          <button
+            type="button"
+            id="modal-feedback-btn-close"
+            class="modal__button-close btn-reset"
+          >
+          </button>
+        </header>
+        <h3 class="modal__tittle"> Обратная связь </h3>
+        <form class="modal__form modal-form flex">
+          <input
+            type="text"
+            placeholder="Имя"
+            name="name"
+            class="modal-form__input"
+            required
+          />
+
+          <div class="modal-form__input-wrapper">
+            <input
+              type="tel"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="Телефон"
+              name="phone"
+              pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$"
+              class="modal-form__input"
+              required
+            />
+            <span class="modal-form__input-tooltip">
+              В формате: +7 (999) 999-99-99
+            </span>
+          </div>
+
+          <input
+            type="email"
+            placeholder="Электронная почта"
+            name="mail"
+            class="modal-form__input"
+            required
+          />
+
+          <textarea
+            placeholder="Сообщение"
+            name="message"
+            class="modal-form__textarea"
+            required
+          ></textarea>
+
+          <div class="modal-form__text-policy modal-text-policy">
+            Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="modal-text-policy__link"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с нашей
+            <a href="#" class="modal-text-policy__link"
+              >политикой конфиденциальности</a
+            >
+          </div>
+
+          <button type="submit" class="modal-form__submit-btn btn-reset flex">
+            Отправить
+            <img
+              class="modal-form__submit-btn-icon btn-reset"
+              src="/src/img/modal/feedback-form__submit-btn-icon.svg"
+              alt="Кнопка отправить"
+            />
+          </button>
+        </form>
+      </div>
+
+      <div
+        id="modal-call-window"
+        class="container__modal modal modal--call flex"
+      >
+        <header class="modal-feedback__header modal__header">
+          <button
+            type="button"
+            id="modal-call-btn-close"
+            class="modal__button-close btn-reset"
+          >
+          </button>
+        </header>
+        <h3 class="modal__tittle"> Заказать звонок </h3>
+        <form class="modal__form modal-form flex">
+          <div class="modal-form__input-wrapper">
+            <input
+              type="tel"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="Телефон"
+              name="phone"
+              pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$"
+              class="modal-form__input"
+              required
+            />
+            <span class="modal-form__input-tooltip">
+              В формате: +7 (999) 999-99-99
+            </span>
+          </div>
+
+          <div
+            class="modal-form__text-policy modal-form__text-policy--call modal-text-policy"
+          >
+            Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="modal-text-policy__link"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с нашей
+            <a href="#" class="modal-text-policy__link"
+              >политикой конфиденциальности</a
+            >
+          </div>
+
+          <button type="submit" class="modal-form__submit-btn btn-reset flex">
+            Отправить
+            <img
+              class="modal-form__submit-btn-icon btn-reset"
+              src="/src/img/modal/feedback-form__submit-btn-icon.svg"
+              alt="Кнопка отправить"
+            />
+          </button>
+        </form>
+      </div>
+
+      <div class="container__main-and-footer-wrapper flex">
+        <main class="main">
+          <header class="main__header main-header">
+            <h1 class="main-header__tittle"> Услуги и сервисы </h1>
+            <ul class="main-header__menu-list menu-list-1120 list-reset">
+              <li class="menu-list-1120__item">
+                <a href="#" class="menu-list-1120__link">
+                  Оставить заявку
+                  <img
+                    src="img/header/header-repair.svg"
+                    alt="Оставить заявку"
+                    class="menu-list-1120__icon"
+                  />
+                </a>
+              </li>
+              <li class="menu-list-1120__item">
+                <a href="#" class="menu-list-1120__link">
+                  Статус ремонта
+                  <img
+                    src="img/header/header-checkstatus.svg"
+                    alt="Статус ремонта"
+                    class="menu-list-1120__icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </header>
+
+          <section class="main__about main-about">
+            <ul
+              class="main-about__list-services-menu list-services-menu list-reset"
+            >
+              <li
+                class="list-services-menu__item list-services-menu__item--order-768 list-services-menu__item--order-1120-hidden"
+              >
+                Ремонтируемые устройства
+              </li>
+              <li
+                class="list-services-menu__item list-services-menu__item--order-768"
+              >
+                Дополнительные услуги
+              </li>
+              <li
+                class="list-services-menu__item list-services-menu__item--order-768 list-services-menu__item--order-1120"
+              >
+                Цены на услуги
+              </li>
+              <li
+                class="list-services-menu__item list-services-menu__item--order-768 list-services-menu__item--order-1120-4"
+              >
+                Специальные цены
+              </li>
+              <li
+                class="list-services-menu__item list-services-menu__item--order-1120-2"
+              >
+                Ремонтируемые бренды
+              </li>
+              <li
+                class="list-services-menu__item list-services-menu__item--order-1120-3"
+              >
+                Адреса сервисных центров
+              </li>
+              <li class="list-services-menu__item"> Отзывы </li>
+            </ul>
+            <div class="main-about__description main-about-description">
+              <div class="main-about-description__text-about text-about">
+                <p class="text-about__paragraph">
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="text-about__paragraph text-about__paragraph--768">
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера
+                </p>
+                <p class="text-about__paragraph text-about__paragraph--1120">
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера, что подтверждает большое количество
+                  постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                  рекомендациям и, в свою очередь, советуют нас родным и
+                  близким.
+                </p>
+                <button class="btn--show-all-info btn-reset">
+                  Читать далее
+                </button>
+              </div>
+              <img
+                src="img/main/main-photo-of-company.jpg"
+                alt="Фото логотипа компании"
+                class="main-about-description__photo-of-company"
+              />
+            </div>
+          </section>
+
+          <section class="main__section-container section-container">
+            <header class="section-container__title-wrapper">
+              <h2 class="section-container__title">
+                Ремонт техники различных брендов
+              </h2>
+            </header>
+
+            <div class="section-container__brands services">
+              <!-- Единый контейнер для Swiper и Grid -->
+              <div class="services__swiper-container swiper-container">
+                <div
+                  id="services-brands-items"
+                  class="services__wrapper swiper-wrapper"
+                >
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Lenovo.png"
+                        alt="Бренд Lenovo"
+                        class="service-item__img service-item__img--108"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Samsung.png"
+                        alt="Бренд Samsung"
+                        class="service-item__img service-item__img--116"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Apple.png"
+                        alt="Бренд Apple"
+                        class="service-item__img service-item__img--44"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-ViewSonic.png"
+                        alt="Бренд ViewSonic"
+                        class="service-item__img service-item__img--128"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Bosch.png"
+                        alt="Бренд Bosch"
+                        class="service-item__img service-item__img--128"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-HP.png"
+                        alt="Бренд HP"
+                        class="service-item__img service-item__img--52"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <!-- Скрытые -->
+                  <div
+                    class="services__slide swiper-slide services__slide--1440 hidden"
+                  >
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Acer.png"
+                        alt="Бренд Acer"
+                        class="service-item__img service-item__img--94"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="services__slide swiper-slide services__slide--1440 hidden"
+                  >
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Sony.png"
+                        alt="Бренд Sony"
+                        class="service-item__img service-item__img--128"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide hidden">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Lenovo.png"
+                        alt="Бренд Lenovo"
+                        class="service-item__img service-item__img--108"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide hidden">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Samsung.png"
+                        alt="Бренд Samsung"
+                        class="service-item__img service-item__img--116"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide hidden">
+                    <div class="services__slide-item service-item flex">
+                      <img
+                        src="img/services/services__slider-img-Apple.png"
+                        alt="Бренд Apple"
+                        class="service-item__img service-item__img--44"
+                      />
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="services__slider-pagination swiper-pagination">
+                </div>
+              </div>
+
+              <button
+                type="button"
+                id="services__btn--show-all-brands"
+                class="services__btn services__btn--show-all btn--show-all-info btn-reset"
+              >
+                Показать все
+              </button>
+            </div>
+          </section>
+
+          <section class="main__section-container section-container">
+            <header class="section-container__title-wrapper">
+              <h2 class="section-container__title">
+                Ремонт различных видов техники
+              </h2>
+            </header>
+
+            <div class="section-container__devices services">
+              <!-- Единый контейнер для Swiper и Grid -->
+              <div class="services__swiper-container swiper-container">
+                <div
+                  id="services-devices-items"
+                  class="services__wrapper swiper-wrapper"
+                >
+                  <div class="services__slide swiper-slide">
+                    <div
+                      class="services__slide-item service-item service-item--devices flex"
+                    >
+                      <span class="service-item__text"> Ремонт ноутбуков </span>
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide">
+                    <div
+                      class="services__slide-item service-item service-item--devices flex"
+                    >
+                      <span class="service-item__text"> Ремонт планшетов </span>
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                  <div class="services__slide swiper-slide">
+                    <div
+                      class="services__slide-item service-item service-item--devices flex"
+                    >
+                      <span class="service-item__text"> Ремонт ПК </span>
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                  <div
+                    class="services__slide swiper-slide services__slide--1440 hidden"
+                  >
+                    <div
+                      class="services__slide-item service-item service-item--devices flex"
+                    >
+                      <span class="service-item__text"> Ремонт мониторов </span>
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+
+                  <!-- Скрытые -->
+                  <div class="services__slide swiper-slide hidden">
+                    <div
+                      class="services__slide-item service-item service-item--devices flex"
+                    >
+                      <span class="service-item__text"> Ремонт планшетов </span>
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                  <div class="services__slide swiper-slide hidden">
+                    <div
+                      class="services__slide-item service-item service-item--devices flex"
+                    >
+                      <span class="service-item__text"> Ремонт ПК </span>
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                  <div class="services__slide swiper-slide hidden">
+                    <div
+                      class="services__slide-item service-item service-item--devices flex"
+                    >
+                      <span class="service-item__text"> Ремонт мониторов </span>
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                  <div class="services__slide swiper-slide hidden">
+                    <div
+                      class="services__slide-item service-item service-item--devices flex"
+                    >
+                      <span class="service-item__text"> Ремонт ноутбуков </span>
+                      <span class="service-item__btn"> </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="services__slider-pagination swiper-pagination">
+                </div>
+              </div>
+
+              <button
+                type="button"
+                id="services__btn--show-all-devices"
+                class="services__btn services__btn--show-all btn--show-all-info btn-reset"
+              >
+                Показать все
+              </button>
+            </div>
+          </section>
+
+          <section
+            class="main__section-container main__section-container--last section-container"
+          >
+            <header class="section-container__title-wrapper">
+              <h2 class="section-container__title"> Цены на услуги </h2>
+            </header>
+
+            <div class="section-container__prices services">
+              <!-- Единый контейнер для Swiper и Grid -->
+              <div
+                class="services__swiper-container services__swiper-container--prices swiper-container"
+              >
+                <div
+                  class="services__wrapper services__wrapper-prices services-price-table swiper-wrapper"
+                >
+                  <div class="services-price-table__head-wrapper">
+                    <div class="services-price-table__head flex">
+                      <div class="services-price-table__name"
+                        >Ремонтные услуги</div
+                      >
+                      <div class="services-price-table__price">Цена</div>
+                      <div class="services-price-table__time">Срок</div>
+                      <div class="services-price-table__empty"></div>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item-prices flex">
+                      <div
+                        class="service-item-prices__wrapper services-price-table__name flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Ремонтные услуги
+                        </span>
+                        <span class="service-item-prices__text">
+                          Диагностика
+                        </span>
+                      </div>
+
+                      <div
+                        class="service-item-prices__wrapper services-price-table__price flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Цена
+                        </span>
+                        <span class="service-item-prices__text">
+                          Бесплатно
+                        </span>
+                      </div>
+
+                      <div
+                        class="services-price-table__time services-price-table__time--768 flex"
+                      >
+                        30 мин
+                      </div>
+                      <div class="service-item-prices__price-wrapper flex">
+                        <div
+                          class="service-item-prices__wrapper service-item-prices__wrapper--768 flex"
+                        >
+                          <span class="service-item-prices__parameter">
+                            Срок
+                          </span>
+                          <span class="service-item-prices__text">
+                            30 мин
+                          </span>
+                        </div>
+                        <button
+                          type="button"
+                          class="service-item-prices__btn btn-reset flex"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item-prices flex">
+                      <div
+                        class="service-item-prices__wrapper services-price-table__name flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Ремонтные услуги
+                        </span>
+                        <span class="service-item-prices__text">
+                          Замена дисплея
+                        </span>
+                      </div>
+
+                      <div
+                        class="service-item-prices__wrapper services-price-table__price flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Цена
+                        </span>
+                        <span class="service-item-prices__text"> 1 000 ₽ </span>
+                      </div>
+
+                      <div
+                        class="services-price-table__time services-price-table__time--768 flex"
+                      >
+                        30-120 мин
+                      </div>
+                      <div class="service-item-prices__price-wrapper flex">
+                        <div
+                          class="service-item-prices__wrapper service-item-prices__wrapper--768 flex"
+                        >
+                          <span class="service-item-prices__parameter">
+                            Срок
+                          </span>
+                          <span class="service-item-prices__text">
+                            30-120 мин
+                          </span>
+                        </div>
+                        <button
+                          type="button"
+                          class="service-item-prices__btn btn-reset flex"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item-prices flex">
+                      <div
+                        class="service-item-prices__wrapper services-price-table__name flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Ремонтные услуги
+                        </span>
+                        <span class="service-item-prices__text">
+                          Замена полифонического динамика
+                        </span>
+                      </div>
+
+                      <div
+                        class="service-item-prices__wrapper services-price-table__price flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Цена
+                        </span>
+                        <span class="service-item-prices__text"> 1 000 ₽ </span>
+                      </div>
+
+                      <div
+                        class="services-price-table__time services-price-table__time--768 flex"
+                      >
+                        30-120 мин
+                      </div>
+                      <div class="service-item-prices__price-wrapper flex">
+                        <div
+                          class="service-item-prices__wrapper service-item-prices__wrapper--768 flex"
+                        >
+                          <span class="service-item-prices__parameter">
+                            Срок
+                          </span>
+                          <span class="service-item-prices__text">
+                            30-120 мин
+                          </span>
+                        </div>
+                        <button
+                          type="button"
+                          class="service-item-prices__btn btn-reset flex"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="services__slide swiper-slide services__slide--320"
+                  >
+                    <div class="services__slide-item service-item-prices flex">
+                      <div
+                        class="service-item-prices__wrapper services-price-table__name flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Ремонтные услуги
+                        </span>
+                        <span class="service-item-prices__text">
+                          Тестирование с выдачей технического заключения
+                        </span>
+                      </div>
+
+                      <div
+                        class="service-item-prices__wrapper services-price-table__price flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Цена
+                        </span>
+                        <span class="service-item-prices__text">
+                          Бесплатно
+                        </span>
+                      </div>
+                      <div
+                        class="services-price-table__time services-price-table__time--768 flex"
+                      >
+                        30-120 мин
+                      </div>
+                      <div class="service-item-prices__price-wrapper flex">
+                        <div
+                          class="service-item-prices__wrapper service-item-prices__wrapper--768 flex"
+                        >
+                          <span class="service-item-prices__parameter">
+                            Срок
+                          </span>
+                          <span class="service-item-prices__text">
+                            30-120 мин
+                          </span>
+                        </div>
+                        <button
+                          type="button"
+                          class="service-item-prices__btn btn-reset flex"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="services__slide swiper-slide">
+                    <div class="services__slide-item service-item-prices flex">
+                      <div
+                        class="service-item-prices__wrapper services-price-table__name flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Ремонтные услуги
+                        </span>
+                        <span class="service-item-prices__text">
+                          Замена программного обеспечения
+                        </span>
+                      </div>
+
+                      <div
+                        class="service-item-prices__wrapper services-price-table__price flex"
+                      >
+                        <span class="service-item-prices__parameter">
+                          Цена
+                        </span>
+                        <span class="service-item-prices__text"> 1 000 ₽ </span>
+                      </div>
+                      <div
+                        class="services-price-table__time services-price-table__time--768 flex"
+                      >
+                        30-120 мин
+                      </div>
+                      <div class="service-item-prices__price-wrapper flex">
+                        <div
+                          class="service-item-prices__wrapper service-item-prices__wrapper--768 flex"
+                        >
+                          <span class="service-item-prices__parameter">
+                            Срок
+                          </span>
+                          <span class="service-item-prices__text">
+                            30-120 мин
+                          </span>
+                        </div>
+                        <button
+                          type="button"
+                          class="service-item-prices__btn btn-reset flex"
+                        >
+                          Заказать
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services__slider-pagination swiper-pagination">
+                </div>
+              </div>
+            </div>
+            <div class="section-container__about-prices about-prices">
+              <p class="about-prices__text"
+                >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+                единичную услугу. Для получения коммерческого предложения на
+                постоянное обслуживание, оставьте заявку.
+              </p>
+              <a href="#" class="about-prices__link">
+                <span class="about-prices__link-offer"
+                  >Получить коммерческое
+                </span>
+                <span
+                  class="about-prices__link-offer about-prices__link-offer--1"
+                  >предложение</span
+                >
+              </a>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer__container footer-container flex">
+            <div class="footer-container__copyright-wrapper">
+              <p class="footer-container__copyright">© 2019 CPS</p>
+              <p class="footer-container__developer"
+                >Разработано командой Apesong</p
+              >
+            </div>
+            <a href="#" class="footer-container__privacy-link"
+              >Политика конфиденциальности</a
+            >
+            <p class="footer-container__disclaimer">
+              Информация, размещенная на данной странице, не является публичной
+              офертой
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

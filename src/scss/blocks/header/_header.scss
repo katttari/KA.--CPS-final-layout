@@ -1,0 +1,150 @@
+.header-container {
+  @media (min-width: 320px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 19px 16px;
+    width: 100%;
+    height: 88px;
+    background-color: $white-color;
+    border-bottom: 1px solid $border-mint-ice-color;
+    border-bottom: 1px solid rgb(11, 11, 11);
+  }
+
+  @media (min-width: 768px) {
+    padding: 19px 24px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1366px) {
+    max-width: 1200px;
+  }
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+
+  &__menu-info {
+    @media (min-width: 768px) {
+    }
+  }
+
+  &__menu-list-wrapper {
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__menu-list.feedback-header--768 {
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+}
+
+.menu-info {
+  @media (min-width: 320px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 17px;
+  }
+
+  @media (min-width: 768px) {
+    gap: 20px;
+  }
+
+  &__logo-link {
+    @media (min-width: 320px) {
+      height: 51px;
+      width: 97px;
+    }
+  }
+
+  &__logo-icon {
+    @media (min-width: 320px) {
+      height: 51px;
+      width: 97px;
+    }
+  }
+}
+
+.burger-menu-btn {
+  @media (min-width: 320px) {
+    height: 40px;
+    width: 40px;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    opacity: 0.65;
+  }
+
+  &__img {
+    @media (min-width: 320px) {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+.header-divider {
+  @media (min-width: 320px) {
+    height: 32px;
+    border-right: 2px solid $light-gray-color;
+  }
+
+  &--320 {
+    @media (min-width: 320px) {
+      display: inline-block;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--768 {
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+}
+
+.menu-list {
+  @media (min-width: 320px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__item {
+    @media (min-width: 320px) {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  &__link {
+    @media (min-width: 320px) {
+      height: 100%;
+    }
+  }
+
+  &__icon {
+    @media (min-width: 320px) {
+      max-width: 40px;
+      height: 40px;
+    }
+  }
+}

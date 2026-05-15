@@ -1,0 +1,80 @@
+.about-prices {
+  @media (min-width: 320px) {
+    padding: 0px 16px 0px 16px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0px 24px 0px 24px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0px 32px 0px 32px;
+  }
+
+  &__text {
+    @media (min-width: 320px) {
+      margin: 0;
+      margin-bottom: 17px;
+      font-size: 14px;
+      line-height: 143%;
+      letter-spacing: 0.2px;
+      font-weight: 400;
+    }
+
+    @media (min-width: 768px) {
+      width: 421px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 1440px) {
+    }
+  }
+
+  &__link {
+    @media (min-width: 320px) {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: left;
+      letter-spacing: -0.2px;
+      font-weight: 500;
+      width: fit-content;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    @media (min-width: 768px) {
+      white-space: nowrap;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      opacity: 0.7;
+    }
+  }
+
+  &__link-offer--1 {
+    @media (min-width: 320px) {
+      white-space: nowrap;
+    }
+
+    @media (min-width: 768px) {
+      display: inline;
+    }
+  }
+
+  &__link-offer--1::after {
+    @media (min-width: 320px) {
+      content: '';
+      display: inline-block;
+      margin-left: 8px;
+      width: 12px;
+      height: 12px;
+      background-image: url(/src/img/services/services__about-prices__link-icon.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+    }
+  }
+}

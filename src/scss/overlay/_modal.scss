@@ -1,0 +1,228 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  flex-direction: column;
+  max-width: 320px;
+  height: 100vh;
+  padding: 24px 0 24px 0;
+  background-color: $white-color;
+  overflow-y: auto;
+  opacity: 0;
+
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE / Edge */
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  transform: translateX(-200%);
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.25s ease-in-out;
+
+  @media (min-width: 1366px) {
+    left: calc((100vw - 1200px) / 2);
+  }
+
+  @media (min-width: 1440px) {
+    left: auto;
+    right: calc((100vw - 1440px) / 2);
+    padding: 0;
+    max-width: 440px;
+    height: 100%;
+    transform: translateX(200%);
+
+    overflow-y: visible;
+    box-shadow:
+      -2px 0px 4px rgba(69, 79, 126, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    border-left: 1px solid $border-mint-ice-color;
+  }
+
+  &.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &__header {
+    margin-bottom: 32px;
+    padding: 0 16px 0 16px;
+
+    @media (min-width: 1440px) {
+      position: relative;
+      margin-bottom: 0;
+      padding: 32px 0 0 0;
+    }
+  }
+
+  &__button-close {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+    background-image: url('/src/img/menu-mobile/menu-mobile-burger-close.svg');
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: -83px;
+      top: 18px;
+      z-index: 3000;
+      margin-right: 0px;
+      padding: 10px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__tittle {
+    position: relative;
+    margin: 0;
+    padding-left: 16px;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+
+    @media (min-width: 1440px) {
+      padding-left: 32px;
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -10px;
+      content: '';
+      border-left: 4px solid $dark-mint-ice-color;
+      height: 40px;
+      border-radius: 0 12px 12px 0;
+
+      @media (min-width: 1440px) {
+        top: -5px;
+      }
+    }
+  }
+}
+
+.modal-form {
+  flex-direction: column;
+  padding: 24px 16px 24px 16px;
+
+  @media (min-width: 1440px) {
+    padding: 24px 32px 24px 32px;
+  }
+
+  &__input-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__input,
+  &__textarea {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    width: 100%;
+    color: $black-color;
+    border: 1px solid $light-gray-color;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: $placeholder-gray-color;
+    }
+  }
+
+  &__input {
+    &:hover + .modal-form__input-tooltip,
+    &:focus + .modal-form__input-tooltip,
+    &:focus-visible + .modal-form__input-tooltip {
+      opacity: 1;
+    }
+  }
+
+  &__input-tooltip {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    padding: 4px 10px;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    background: $light-gray-color;
+    border-radius: 6px;
+  }
+
+  &__textarea {
+    min-height: 118px;
+    resize: none;
+
+    &::placeholder {
+      color: $placeholder-gray-color;
+    }
+  }
+
+  &__text-policy {
+    margin-bottom: 19px;
+    font-size: 14px;
+    line-height: 114%;
+    font-weight: 500;
+    color: $gray-color;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 27px;
+    }
+
+    &--call {
+      margin-bottom: 18px;
+      @media (min-width: 1440px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__submit-btn {
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 19px 4px 19px;
+    align-self: flex-end;
+    width: 136px;
+    font-size: 12px;
+    line-height: 200%;
+    text-align: right;
+    letter-spacing: -0.15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $raspberry-color;
+    border-radius: 16px;
+
+    &:hover {
+      background: $raspberry-color-hover;
+    }
+
+    &-icon {
+      width: 8px;
+      height: 10px;
+    }
+  }
+}
+
+.modal-text-policy {
+  &__link {
+    color: $raspberry-color;
+  }
+}

@@ -1,0 +1,75 @@
+.service-item {
+  @media (min-width: 320px) {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 72px;
+    background-color: $white-color;
+    border: 1px solid $light-gray-color;
+    border-radius: 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+  }
+
+  &:hover .service-item__btn {
+    transform: scale(1.25);
+  }
+
+  &--devices {
+    min-height: 160px;
+  }
+
+  &__img {
+    height: auto;
+  }
+
+  &__img--108 {
+    width: 108px;
+  }
+
+  &__img--116 {
+    width: 116px;
+  }
+
+  &__img--44 {
+    width: 44px;
+  }
+
+  &__img--128 {
+    width: 128px;
+  }
+
+  &__img--52 {
+    width: 52px;
+  }
+
+  &__img--94 {
+    width: 94px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: $black-color;
+  }
+
+  &__btn {
+    @media (min-width: 320px) {
+      width: 40px;
+      height: 40px;
+      background-image: url('/src/img/services/services__slider-item-btn.svg');
+      background-size: 40px 40px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}

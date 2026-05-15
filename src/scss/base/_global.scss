@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'TT Lakes';
+  color: $black-color;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+// Скрытие скролбара
+html {
+  // overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-reset {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+  border: none;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
