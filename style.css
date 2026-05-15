@@ -901,19 +901,19 @@ button.swiper-pagination-bullet {
 @charset "UTF-8";
 @font-face {
   font-family: 'TT Lakes';
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff");
+  src: url(./fonts/TTLakes-Regular.woff);
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'TT Lakes';
-  src: url("/src/fonts/TTLakes/TTLakes-Medium.woff");
+  src: url(./fonts/TTLakes-Medium.woff);
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'TT Lakes';
-  src: url("/src/fonts/TTLakes/TTLakes-Bold.woff");
+  src: url(./fonts/TTLakes-Bold.woff);
   font-weight: 800;
   font-style: normal; }
 
@@ -1155,7 +1155,7 @@ html::-webkit-scrollbar {
     letter-spacing: -0.6px;
     color: #1b1c21;
     font-weight: 700;
-    background-image: url(/src/img/main/main-tittle-highlight.svg);
+    background-image: url(./static/main-tittle-highlight.svg);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 4px 40px; } }
@@ -1425,7 +1425,7 @@ html::-webkit-scrollbar {
     line-height: 150%;
     letter-spacing: -0.2px;
     font-weight: 500;
-    background-image: url(/src/img/main/main-link-icon-expand.svg);
+    background-image: url(./static/main-link-icon-expand.svg);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 24px 24px; } }
@@ -1485,7 +1485,7 @@ html::-webkit-scrollbar {
       content: '';
       height: 100%;
       width: 24px;
-      background-image: url("/src/img/services/services__btn--show-all--icon.svg");
+      background-image: url(./static/services__btn--show-all--icon.svg);
       background-position: center center;
       background-repeat: no-repeat;
       transition: transform 0.25s ease-in-out; }
@@ -1667,7 +1667,7 @@ html::-webkit-scrollbar {
   .service-item__btn {
     width: 40px;
     height: 40px;
-    background-image: url("/src/img/services/services__slider-item-btn.svg");
+    background-image: url(./static/services__slider-item-btn.svg);
     background-size: 40px 40px;
     background-position: center center;
     background-repeat: no-repeat; } }
@@ -1731,7 +1731,7 @@ html::-webkit-scrollbar {
     margin-left: 8px;
     width: 12px;
     height: 12px;
-    background-image: url(/src/img/services/services__about-prices__link-icon.png);
+    background-image: url(./static/services__about-prices__link-icon.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1884,7 +1884,7 @@ html::-webkit-scrollbar {
     display: inline-block;
     width: 7px;
     height: 10px;
-    background-image: url(/src/img/services/service-item-prices__btn.svg);
+    background-image: url(./static/service-item-prices__btn.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -2096,7 +2096,7 @@ html::-webkit-scrollbar {
     transition: all 0.2s ease-in-out; }
   .menu-mobile-header__button--close {
     margin-right: 16px;
-    background-image: url("/src/img/menu-mobile/menu-mobile-burger-close.svg");
+    background-image: url(./static/menu-mobile-burger-close.svg);
     transition: opacity 0.2s ease-in-out; }
     .menu-mobile-header__button--close:hover, .menu-mobile-header__button--close:focus, .menu-mobile-header__button--close:focus-visible {
       opacity: 0.65; }
@@ -2104,7 +2104,7 @@ html::-webkit-scrollbar {
       .menu-mobile-header__button--close {
         display: none; } }
   .menu-mobile-header__button--search {
-    background-image: url("/src/img/menu-mobile/menu-mobile-search.svg"); }
+    background-image: url(./static/menu-mobile-search.svg); }
   .menu-mobile-header__logo-link {
     display: inline-block;
     margin-right: 78px;
@@ -2231,7 +2231,7 @@ html::-webkit-scrollbar {
     background-position: center center;
     background-repeat: no-repeat;
     transition: all 0.2s ease-in-out;
-    background-image: url("/src/img/menu-mobile/menu-mobile-burger-close.svg"); }
+    background-image: url(./static/menu-mobile-burger-close.svg); }
     .modal__button-close:hover {
       opacity: 0.8; }
     @media (min-width: 1440px) {
