@@ -155,7 +155,7 @@
 
   &__button--close {
     margin-right: 16px;
-    background-image: url('/src/img/menu-mobile/menu-mobile-burger-close.svg');
+    background-image: url('img/menu-mobile/menu-mobile-burger-close.svg');
     transition: opacity 0.2s ease-in-out;
 
     &:hover,
@@ -170,7 +170,7 @@
   }
 
   &__button--search {
-    background-image: url('/src/img/menu-mobile/menu-mobile-search.svg');
+    background-image: url('img/menu-mobile/menu-mobile-search.svg');
   }
 
   &__logo-link {
